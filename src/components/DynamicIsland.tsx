@@ -97,7 +97,7 @@ const DEFAULT_STATE: defaultState = {
 					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
 				>
-					<div className="flex px-2">
+					<div className="flex px-2 items-center">
 						<div className="rounded-full overflow-hidden mr-2">
 							<img
 								height={50}
@@ -166,7 +166,7 @@ export default function DynamicIsland () {
 	return (
 		<div className="flex flex-col h-screen items-center justify-between py-20">
 			{/* Island */}
-			<motion.div style={mainContainer}>{islandComponent.island}</motion.div>
+			<motion.div style={mainContainer}>{DEFAULT_STATE.call.island}</motion.div>
 
 			{/* Controls */}
 			<div className="bg-gray-300 flex justify-between items-center gap-10 py-4 px-8 rounded-full">
