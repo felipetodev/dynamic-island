@@ -166,7 +166,7 @@ export default function DynamicIsland () {
 	return (
 		<div className="flex flex-col h-screen items-center justify-between py-20">
 			{/* Island */}
-			<motion.div style={mainContainer}>{DEFAULT_STATE.call.island}</motion.div>
+			<motion.div style={mainContainer}>{islandComponent.id}</motion.div>
 
 			{/* Controls */}
 			<div className="bg-gray-300 flex justify-between items-center gap-10 py-4 px-8 rounded-full">
